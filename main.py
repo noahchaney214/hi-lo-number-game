@@ -6,7 +6,7 @@ from random import randint
     if their guess was higher or lower than the secret number. If they run out of guesses
     they lose, but if they guess the correct number they win. 
 
-    Python Version Required: 3.11.X
+    Python Version Required: 3.11+
 
     Author: Noah Chaney
 """
@@ -60,7 +60,7 @@ def main():
         Main loop for the game. Takes user input number and determines if the guess was high or low
         Each valid guess takes away one guess count, when it reaches 0 the game ends. If the guess isn't
         valid no guess count is removed. If guess is correct you win. Prompts to restart game or end if fail
-        or win. If player guesses -1 at any point the gamne will end
+        or win. If player guesses -1 at any point the gamne will end.
     """
     while True:
         print("Guess a number between 1 and",hi,", enter -1 to leave\n")
